@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     title: 'Delicacy Property Mumbai | SRA & Building Redevelopment Consultant',
     description: 'Delicacy Property is a trusted real estate consultant in Mumbai specializing in SRA deals, building redevelopment, property consultancy, and real estate solutions.',
   },
+  verification: {
+    google: 'ZS7Ji6uzAvCK4ZWV-kfNVwciVcpp0w9o9JPaGPKRc4Q',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
