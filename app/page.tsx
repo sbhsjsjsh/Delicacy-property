@@ -26,8 +26,14 @@ export default function LandingPage() {
       <header className="fixed top-0 w-full z-50 bg-teal-950/85 backdrop-blur-lg border-b border-teal-800/50 shadow-sm">
         <nav className="w-full px-6 py-4 md:px-12 max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0">
-              <Building2 className="w-5 h-5 text-emerald-400" />
+            <div className="relative w-12 h-12 md:w-14 md:h-14 overflow-hidden rounded-lg">
+              <Image 
+                src="https://i.ibb.co/PG1tCFXY/file-00000000551c81fd87e21cbaa623a2a2.png"
+                alt="Delicacy Property Logo"
+                fill
+                className="object-contain"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div className="text-xl md:text-2xl font-semibold tracking-tight text-white">
               Delicacy<span className="text-emerald-400 font-light">Property</span>
@@ -192,8 +198,19 @@ export default function LandingPage() {
       </main>
 
       <footer className="px-6 py-12 md:px-12 max-w-7xl mx-auto border-t border-teal-800/50 flex flex-col sm:flex-row justify-between items-center gap-6">
-        <div className="text-xl font-semibold tracking-tight text-white">
-          Delicacy<span className="text-emerald-400 font-light">Property</span>
+        <div className="flex items-center gap-3">
+          <div className="relative w-10 h-10 overflow-hidden rounded-lg">
+            <Image 
+              src="https://i.ibb.co/PG1tCFXY/file-00000000551c81fd87e21cbaa623a2a2.png"
+              alt="Delicacy Property Logo"
+              fill
+              className="object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="text-xl font-semibold tracking-tight text-white">
+            Delicacy<span className="text-emerald-400 font-light">Property</span>
+          </div>
         </div>
         <p className="text-sm text-teal-500 font-medium tracking-wide">
           &copy; {new Date().getFullYear()} Delicacy Property. All rights reserved.
