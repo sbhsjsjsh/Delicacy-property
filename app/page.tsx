@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight, Building2, Map, ShieldCheck, TrendingUp, Phone, MessageCircle, CheckCircle2, Users2, HelpCircle, MapPin } from 'lucide-react';
+import { ArrowRight, Building2, Map, ShieldCheck, TrendingUp, Phone, MessageCircle, CheckCircle2, Users2, HelpCircle, MapPin, Handshake } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'motion/react';
@@ -128,7 +128,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Featured Card 1 */}
             <Link href="/28-acre-jv-land-hiranandani-powai-mumbai" className="group">
-              <div className="bg-white rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-2">
+              <div className="bg-white rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
                 <div className="relative h-64 w-full">
                   <Image 
                     src="https://picsum.photos/seed/powai/600/400" 
@@ -141,16 +141,34 @@ export default function LandingPage() {
                     Exclusive
                   </div>
                 </div>
-                <div className="p-8">
+                <div className="p-8 flex-grow">
                   <div className="flex items-center gap-2 text-emerald-600 text-[10px] font-black uppercase tracking-widest mb-3">
                     <MapPin className="w-3 h-3" /> Powai, Mumbai
                   </div>
                   <h4 className="text-2xl font-bold text-emerald-950 mb-4 group-hover:text-emerald-600 transition-colors">28 Acre Strategic JV Land</h4>
                   <p className="text-emerald-800/60 text-sm font-medium leading-relaxed mb-6">Massive development block near Hiranandani. Proposed 60:40 ratio with high FSI potential.</p>
+                </div>
+                <div className="p-8 pt-0 mt-auto">
                   <div className="flex items-center justify-between pt-6 border-t border-emerald-50">
                     <span className="text-emerald-950 font-black text-lg">28 Acres</span>
                     <span className="flex items-center gap-2 text-emerald-600 text-sm font-bold">Details <ArrowRight className="w-4 h-4" /></span>
                   </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Hub Card */}
+            <Link href="/land-for-joint-venture-in-mumbai" className="group">
+              <div className="bg-emerald-50 rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
+                <div className="p-10 flex-grow flex flex-col justify-center text-center">
+                  <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+                    <Handshake className="w-10 h-10 text-emerald-500" />
+                  </div>
+                  <h4 className="text-3xl font-black text-emerald-950 mb-6 group-hover:text-emerald-600 transition-colors">Mumbai JV Hub</h4>
+                  <p className="text-emerald-800/60 font-medium leading-relaxed mb-8">Access our complete directory of land opportunities for Joint Venture development across Mumbai.</p>
+                  <span className="inline-flex items-center gap-2 text-emerald-600 font-bold justify-center mt-auto">
+                    Explore Hub <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  </span>
                 </div>
               </div>
             </Link>
@@ -429,6 +447,7 @@ export default function LandingPage() {
           <div>
             <h6 className="text-emerald-950 font-black text-sm mb-8 uppercase tracking-[0.2em]">Services</h6>
             <ul className="space-y-5">
+              <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">JV Land Hub</Link></li>
               {['SRA Consulting', 'Redevelopment', 'Open Land Deals', 'Commercial Assets'].map((s) => (
                 <li key={s} className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors cursor-pointer flex items-center gap-2 group">
                   <div className="w-1.5 h-1.5 bg-emerald-300 rounded-full group-hover:bg-emerald-500 transition-colors"></div>
