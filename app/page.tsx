@@ -157,6 +157,37 @@ export default function LandingPage() {
               </div>
             </Link>
 
+            {/* Dadar Outright Card */}
+            <Link href="/outright-building-sale-in-dadar" className="group">
+              <div className="bg-white rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
+                <div className="relative h-64 w-full">
+                  <Image 
+                    src="https://picsum.photos/seed/dadar-sale/600/400" 
+                    alt="Outright Building Sale Dadar"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-emerald-900 text-white text-[10px] font-black uppercase tracking-widest rounded-full">
+                    Prime Asset
+                  </div>
+                </div>
+                <div className="p-8 flex-grow">
+                  <div className="flex items-center gap-2 text-emerald-600 text-[10px] font-black uppercase tracking-widest mb-3">
+                    <MapPin className="w-3 h-3" /> Dadar, Mumbai
+                  </div>
+                  <h4 className="text-2xl font-bold text-emerald-950 mb-4 group-hover:text-emerald-600 transition-colors">Outright Building Sale</h4>
+                  <p className="text-emerald-800/60 text-sm font-medium leading-relaxed mb-6">Exclusive building purchase opportunities in Mumbai's most connected transit hub.</p>
+                </div>
+                <div className="p-8 pt-0 mt-auto">
+                  <div className="flex items-center justify-between pt-6 border-t border-emerald-50">
+                    <span className="text-emerald-950 font-black text-lg text-sm uppercase tracking-tighter">Verified Deal</span>
+                    <span className="flex items-center gap-2 text-emerald-600 text-sm font-bold">Enquire <ArrowRight className="w-4 h-4" /></span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
             {/* Hub Card */}
             <Link href="/land-for-joint-venture-in-mumbai" className="group">
               <div className="bg-emerald-50 rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
@@ -448,6 +479,7 @@ export default function LandingPage() {
             <h6 className="text-emerald-950 font-black text-sm mb-8 uppercase tracking-[0.2em]">Services</h6>
             <ul className="space-y-5">
               <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">JV Land Hub</Link></li>
+              <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Building Sale Dadar</Link></li>
               {['SRA Consulting', 'Redevelopment', 'Open Land Deals', 'Commercial Assets'].map((s) => (
                 <li key={s} className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors cursor-pointer flex items-center gap-2 group">
                   <div className="w-1.5 h-1.5 bg-emerald-300 rounded-full group-hover:bg-emerald-500 transition-colors"></div>
