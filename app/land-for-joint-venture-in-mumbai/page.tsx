@@ -414,7 +414,8 @@ export default function JVLandHubPage() {
             <h6 className="text-emerald-950 font-black text-sm mb-10 uppercase tracking-[0.3em]">Directory</h6>
             <ul className="space-y-6">
               <li><Link href="/" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Home</Link></li>
-              <li><Link href="/28-acre-jv-land-hiranandani-powai-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Powai Opportunity</Link></li>
+              <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Outright Sale Dadar</Link></li>
+              <li><Link href="/commercial-property-for-sale-in-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Commercial Property</Link></li>
               <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">JV Hub</Link></li>
             </ul>
           </div>

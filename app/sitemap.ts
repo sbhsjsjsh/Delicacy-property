@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/28-acre-jv-land-hiranandani-powai-mumbai',
     '/land-for-joint-venture-in-mumbai',
     '/outright-building-sale-in-dadar',
+    '/commercial-property-for-sale-in-mumbai',
     '/new-properties-mumbai'
   ].map((route) => ({
     url: `${baseUrl}${route}`,

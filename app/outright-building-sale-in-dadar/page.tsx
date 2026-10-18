@@ -394,7 +394,7 @@ export default function OutrightBuildingDadarPage() {
             <ul className="space-y-6">
               <li><Link href="/" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Home</Link></li>
               <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">JV Land Hub</Link></li>
-              <li><Link href="/28-acre-jv-land-hiranandani-powai-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Powai Opportunity</Link></li>
+              <li><Link href="/commercial-property-for-sale-in-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Commercial Property</Link></li>
             </ul>
           </div>
 
