@@ -10,7 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/outright-building-sale-in-dadar',
     '/commercial-property-for-sale-in-mumbai',
     '/new-properties-mumbai',
-    '/large-land-investment-property-in-mumbai-dahisar'
+    '/large-land-investment-property-in-mumbai-dahisar',
+    '/large-land-acquisition-for-developers-in-dahisar'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
