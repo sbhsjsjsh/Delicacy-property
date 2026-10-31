@@ -121,7 +121,7 @@ export default function PropertyPage() {
         {/* Property Introduction */}
         <section className="px-6 py-20 bg-emerald-50/50 border-y border-emerald-100">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black text-emerald-950 mb-8 text-center">Unveiling Mumbai's Most Coveted Development Parcel</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-emerald-950 mb-8 text-center">Unveiling Mumbai&apos;s Most Coveted Development Parcel</h2>
             <div className="prose prose-emerald lg:prose-xl max-w-none text-emerald-800 font-medium leading-relaxed">
               <p>
                 Delicacy Property presents an unprecedented Joint Venture (JV) opportunity for a sprawling 28-acre land parcel situated in the heart of Powai, Mumbai. Located in close proximity to the ultra-premium Hiranandani Gardens, this site represents one of the largest remaining contiguous land blocks in the eastern suburbs.
@@ -312,7 +312,7 @@ export default function PropertyPage() {
             <span className="text-2xl font-bold text-emerald-950 tracking-tighter">Delicacy<span className="text-emerald-500 font-light">Property</span></span>
           </div>
           <p className="text-emerald-800/50 font-bold uppercase tracking-widest text-xs">
-            &copy; {new Date().getFullYear()} Delicacy Property. Mumbai's Land Specialists.
+            &copy; {new Date().getFullYear()} Delicacy Property. Mumbai&apos;s Land Specialists.
           </p>
         </div>
       </footer>

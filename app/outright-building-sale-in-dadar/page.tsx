@@ -125,7 +125,7 @@ export default function OutrightBuildingDadarPage() {
                 <h2 className="text-3xl md:text-4xl font-black text-emerald-950 mb-8">Understanding Outright Building Sales</h2>
                 <div className="prose prose-emerald lg:prose-lg text-emerald-800 font-medium leading-relaxed space-y-6">
                   <p>
-                    An outright building sale involves the transfer of the entire structure along with the land title from the current owner to the buyer. Unlike individual unit sales, this model provides buyers with complete control over the property's management, future development, and usage.
+                    An outright building sale involves the transfer of the entire structure along with the land title from the current owner to the buyer. Unlike individual unit sales, this model provides buyers with complete control over the property&apos;s management, future development, and usage.
                   </p>
                   <p>
                     In Dadar, these opportunities are rare and highly sought after due to the central location and excellent connectivity. Evaluating a building purchase requires careful assessment of factors such as exact location, permitted usage (residential/commercial), current occupancy status, title documentation, and overall structural condition.

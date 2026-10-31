@@ -106,7 +106,7 @@ export default function CommercialPropertyMumbaiPage() {
               Commercial Property for <span className="text-emerald-500 italic">Sale in Mumbai</span>
             </motion.h1>
             <motion.p variants={FADE_UP} className="text-lg md:text-xl text-emerald-800/70 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-              Delicacy Property assists serious buyers, business owners, and property investors in acquiring high-potential commercial real estate across Mumbai's prime business districts.
+              Delicacy Property assists serious buyers, business owners, and property investors in acquiring high-potential commercial real estate across Mumbai&apos;s prime business districts.
             </motion.p>
             <motion.div variants={FADE_UP} className="flex flex-wrap justify-center gap-4">
               <a href="tel:9004810239" className="flex items-center gap-3 px-8 py-4 bg-emerald-500 text-white rounded-2xl font-bold hover:bg-emerald-600 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-emerald-500/25">
@@ -125,7 +125,7 @@ export default function CommercialPropertyMumbaiPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-black text-emerald-950 mb-8 leading-tight">
-                  Expert Guidance in Mumbai's <br /><span className="text-emerald-500">Commercial Real Estate</span>
+                  Expert Guidance in Mumbai&apos;s <br /><span className="text-emerald-500">Commercial Real Estate</span>
                 </h2>
                 <p className="text-emerald-800/80 text-lg mb-8 leading-relaxed">
                   Navigating the Mumbai commercial market requires precision, local expertise, and an understanding of business-specific requirements. At Delicacy Property, we bridge the gap between demand and premium supply.
@@ -159,7 +159,7 @@ export default function CommercialPropertyMumbaiPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/40 to-transparent" />
                 <div className="absolute bottom-8 left-8 right-8 p-6 bg-white/90 backdrop-blur-md rounded-2xl border border-white/50">
                   <p className="text-sm font-bold text-emerald-950 italic leading-relaxed">
-                    "Mumbai's commercial landscape is diverse. Choosing the right space means balancing immediate utility with long-term capital appreciation."
+                    &quot;Mumbai&apos;s commercial landscape is diverse. Choosing the right space means balancing immediate utility with long-term capital appreciation.&quot;
                   </p>
                 </div>
               </div>

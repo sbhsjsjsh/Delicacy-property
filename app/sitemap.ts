@@ -9,7 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/land-for-joint-venture-in-mumbai',
     '/outright-building-sale-in-dadar',
     '/commercial-property-for-sale-in-mumbai',
-    '/new-properties-mumbai'
+    '/new-properties-mumbai',
+    '/large-land-investment-property-in-mumbai-dahisar'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],

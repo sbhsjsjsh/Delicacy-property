@@ -272,7 +272,7 @@ export default function JVLandHubPage() {
                 <Briefcase className="w-12 h-12 text-emerald-400" />
               </div>
               <h4 className="text-3xl font-black text-emerald-950 mb-6">For Landowners</h4>
-              <p className="text-emerald-800/70 font-medium mb-10 leading-relaxed text-lg max-w-sm">Unlock the true value of your land asset by partnering with Mumbai's most reputable developers through our firm.</p>
+              <p className="text-emerald-800/70 font-medium mb-10 leading-relaxed text-lg max-w-sm">Unlock the true value of your land asset by partnering with Mumbai&apos;s most reputable developers through our firm.</p>
               <a href="tel:9004810239" className="px-10 py-4 bg-emerald-950 text-white font-bold rounded-full hover:bg-emerald-900 transition-all shadow-xl shadow-emerald-950/20">
                 Confidential Consultation
               </a>
@@ -406,7 +406,7 @@ export default function JVLandHubPage() {
               </div>
             </Link>
             <p className="text-emerald-800/50 font-medium text-xl max-w-md leading-relaxed mb-12">
-              Mumbai's most trusted real estate consultancy for Joint Venture partnerships, SRA redevelopment, and high-value land transactions.
+              Mumbai&apos;s most trusted real estate consultancy for Joint Venture partnerships, SRA redevelopment, and high-value land transactions.
             </p>
           </div>
           

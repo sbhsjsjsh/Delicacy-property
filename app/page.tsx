@@ -177,7 +177,7 @@ export default function LandingPage() {
                     <MapPin className="w-3 h-3" /> Dadar, Mumbai
                   </div>
                   <h4 className="text-2xl font-bold text-emerald-950 mb-4 group-hover:text-emerald-600 transition-colors">Outright Building Sale</h4>
-                  <p className="text-emerald-800/60 text-sm font-medium leading-relaxed mb-6">Exclusive building purchase opportunities in Mumbai's most connected transit hub.</p>
+                  <p className="text-emerald-800/60 text-sm font-medium leading-relaxed mb-6">Exclusive building purchase opportunities in Mumbai&apos;s most connected transit hub.</p>
                 </div>
                 <div className="p-8 pt-0 mt-auto">
                   <div className="flex items-center justify-between pt-6 border-t border-emerald-50">
@@ -221,7 +221,7 @@ export default function LandingPage() {
                     <Building2 className="w-3 h-3" /> Prime Business Assets
                   </div>
                   <h4 className="text-3xl md:text-5xl font-black text-white mb-6 group-hover:text-emerald-400 transition-colors tracking-tight">Commercial Property Mumbai</h4>
-                  <p className="text-emerald-100/60 font-medium leading-relaxed mb-8 max-w-xl">Premium office spaces, retail showrooms, and standalone commercial buildings available for outright sale across Mumbai's business hubs.</p>
+                  <p className="text-emerald-100/60 font-medium leading-relaxed mb-8 max-w-xl">Premium office spaces, retail showrooms, and standalone commercial buildings available for outright sale across Mumbai&apos;s business hubs.</p>
                   <span className="inline-flex items-center gap-3 text-emerald-400 font-black uppercase tracking-[0.2em] text-xs">
                     View Listings <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                   </span>
@@ -242,7 +242,7 @@ export default function LandingPage() {
                 className="max-w-2xl"
               >
                 <h2 className="text-sm font-black tracking-[0.3em] uppercase text-emerald-600 mb-6">Expert Solutions</h2>
-                <h3 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight text-emerald-950">Navigating Mumbai's Complex Landscape.</h3>
+                <h3 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight text-emerald-950">Navigating Mumbai&apos;s Complex Landscape.</h3>
               </motion.div>
               <motion.p 
                 initial={{ opacity: 0, x: 20 }}
@@ -340,7 +340,7 @@ export default function LandingPage() {
                 Integrity is the Foundation.
               </motion.h2>
               <motion.p variants={FADE_UP} initial="initial" whileInView="whileInView" viewport={{ once: true }} className="text-emerald-800 font-medium text-xl leading-relaxed mb-16">
-                In a market filled with noise, Delicacy Property stands out through radical transparency and precision. We don't just find properties; we build legacies.
+                In a market filled with noise, Delicacy Property stands out through radical transparency and precision. We don&apos;t just find properties; we build legacies.
               </motion.p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
@@ -371,7 +371,7 @@ export default function LandingPage() {
               />
               <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay"></div>
               <div className="absolute bottom-10 left-10 right-10 p-10 bg-white/90 backdrop-blur-xl rounded-[2.5rem] border border-white shadow-2xl">
-                <p className="text-emerald-950 font-bold text-xl leading-relaxed mb-6 italic">"Our goal is to simplify the complex world of Mumbai real estate, one project at a time."</p>
+                <p className="text-emerald-950 font-bold text-xl leading-relaxed mb-6 italic">&quot;Our goal is to simplify the complex world of Mumbai real estate, one project at a time.&quot;</p>
                 <div className="flex items-center gap-5">
                   <div className="w-14 h-14 rounded-full bg-emerald-500 border-4 border-emerald-100 flex items-center justify-center">
                     <Building2 className="w-6 h-6 text-white" />
@@ -496,7 +496,7 @@ export default function LandingPage() {
               </div>
             </div>
             <p className="text-emerald-800/50 font-medium text-lg max-w-sm leading-relaxed">
-              Mumbai's premier real estate consultancy specializing in SRA, building redevelopment, and high-value property acquisitions. Trusted by land owners and developers alike.
+              Mumbai&apos;s premier real estate consultancy specializing in SRA, building redevelopment, and high-value property acquisitions. Trusted by land owners and developers alike.
             </p>
           </div>
           
