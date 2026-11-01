@@ -19,7 +19,7 @@ const PROJECTS = [
     location: 'Worli, Mumbai',
     type: 'Luxury Residential',
     status: 'Launching Soon',
-    image: 'https://picsum.photos/seed/luxury/800/600',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800',
     desc: 'Bespoke 3 & 4 BHK residences with unobstructed sea views and world-class amenities.'
   },
   {
@@ -27,7 +27,7 @@ const PROJECTS = [
     location: 'Bandra West, Mumbai',
     type: 'Premium Redevelopment',
     status: 'Under Construction',
-    image: 'https://picsum.photos/seed/sovereign/800/600',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800',
     desc: 'An architectural marvel in the heart of Bandra, offering exclusivity and modern lifestyle.'
   },
   {
@@ -35,7 +35,7 @@ const PROJECTS = [
     location: 'BKC, Mumbai',
     type: 'Grade-A Commercial',
     status: 'Ready to Move',
-    image: 'https://picsum.photos/seed/office/800/600',
+    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800',
     desc: 'State-of-the-art office spaces designed for global corporations and growing enterprises.'
   }
 ];
@@ -66,14 +66,28 @@ export default function NewPropertiesPage() {
 
       <main className="pt-32 pb-24">
         {/* Hero */}
-        <section className="px-6 max-w-7xl mx-auto text-center mb-24">
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold tracking-widest uppercase mb-8">
-            <Sparkles className="w-3 h-3" /> New Projects 2024
-          </motion.div>
-          <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-white mb-8">Exclusive New Properties <br/> across Mumbai.</h1>
-          <p className="text-teal-100/60 max-w-2xl mx-auto text-lg md:text-xl font-light">
-            Discover premium residential and commercial opportunities curated by Delicacy Property. From pre-launches to ready possessions.
-          </p>
+        <section className="relative px-6 pt-24 pb-32 md:pt-40 md:pb-56 overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <Image 
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1920"
+              alt="New Mumbai Residential Skyscrapers Modern View"
+              fill
+              className="object-cover opacity-20 grayscale"
+              priority
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-teal-950 via-transparent to-teal-950" />
+          </div>
+
+          <div className="max-w-7xl mx-auto text-center">
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold tracking-widest uppercase mb-8">
+              <Sparkles className="w-3 h-3" /> New Projects 2024
+            </motion.div>
+            <h1 className="text-4xl md:text-8xl font-black tracking-tight text-white mb-10 leading-[1.05]">Exclusive New Properties <br/> across Mumbai.</h1>
+            <p className="text-teal-100/60 max-w-2xl mx-auto text-lg md:text-2xl font-light leading-relaxed">
+              Discover premium residential and commercial opportunities curated by Delicacy Property. From pre-launches to ready possessions.
+            </p>
+          </div>
         </section>
 
         {/* Property Grid */}
@@ -146,8 +160,8 @@ export default function NewPropertiesPage() {
             </div>
             <div className="relative h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl">
                <Image 
-                  src="https://picsum.photos/seed/investment/800/800"
-                  alt="Property Investment"
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
+                  alt="Premium Real Estate Investment Visual"
                   fill
                   className="object-cover"
                   referrerPolicy="no-referrer"

@@ -66,36 +66,48 @@ export default function PropertyPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="px-6 md:px-12 max-w-7xl mx-auto mb-16">
-          <motion.div {...STAGGER} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-xs font-black uppercase tracking-widest mb-6">
+        <section className="relative px-6 pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <Image 
+              src="https://images.unsplash.com/photo-1566933267062-4264667a4804?auto=format&fit=crop&q=80&w=1920"
+              alt="Powai Lake and Hiranandani Skyline Premium View"
+              fill
+              className="object-cover opacity-15 grayscale"
+              priority
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+          </div>
+
+          <motion.div {...STAGGER} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+            <div className="order-2 lg:order-1">
+              <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
                 Premium JV Opportunity
               </motion.div>
-              <motion.h1 variants={FADE_UP} className="text-4xl md:text-5xl lg:text-6xl font-black text-emerald-950 leading-tight mb-6">
+              <motion.h1 variants={FADE_UP} className="text-4xl md:text-7xl font-black text-emerald-950 leading-[1.05] mb-8 tracking-tight">
                 Strategic 28-Acre JV Land in <span className="text-emerald-500">Powai, Mumbai</span>
               </motion.h1>
-              <motion.p variants={FADE_UP} className="text-lg md:text-xl text-emerald-800/80 font-medium leading-relaxed mb-8">
+              <motion.p variants={FADE_UP} className="text-lg md:text-2xl text-emerald-800/80 font-medium leading-relaxed mb-12">
                 A rare, massive land parcel located near the prestigious Hiranandani micro-market. Perfect for iconic residential or mixed-use redevelopment by Tier-1 developers.
               </motion.p>
               
-              <motion.div variants={FADE_UP} className="grid grid-cols-2 gap-4 mb-8">
-                <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
-                  <p className="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-1">Land Area</p>
-                  <p className="text-xl font-black text-emerald-950">28 Acres</p>
+              <motion.div variants={FADE_UP} className="grid grid-cols-2 gap-6 mb-12">
+                <div className="p-6 rounded-[2rem] bg-emerald-50 border border-emerald-100 shadow-sm">
+                  <p className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">Land Area</p>
+                  <p className="text-3xl font-black text-emerald-950">28 Acres</p>
                 </div>
-                <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
-                  <p className="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-1">Proposed Ratio</p>
-                  <p className="text-xl font-black text-emerald-950">60:40 JV</p>
+                <div className="p-6 rounded-[2rem] bg-emerald-50 border border-emerald-100 shadow-sm">
+                  <p className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">Proposed Ratio</p>
+                  <p className="text-3xl font-black text-emerald-950">60:40 JV</p>
                 </div>
               </motion.div>
 
-              <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9004810239" className="flex items-center justify-center gap-2 px-8 py-4 bg-emerald-500 text-white font-black rounded-full shadow-lg shadow-emerald-500/20 hover:bg-emerald-600 hover:-translate-y-1 transition-all">
-                  <Phone className="w-5 h-5" /> Call Now
+              <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-6">
+                <a href="tel:9004810239" className="flex items-center justify-center gap-4 px-10 py-5 bg-emerald-500 text-white font-black uppercase tracking-widest text-sm rounded-full shadow-2xl shadow-emerald-500/30 hover:bg-emerald-600 hover:-translate-y-1.5 transition-all">
+                  <Phone className="w-6 h-6" /> Call Now
                 </a>
-                <a href="https://wa.me/919004810239" className="flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-emerald-200 text-emerald-700 font-black rounded-full hover:bg-emerald-50 transition-all">
-                  <MessageCircle className="w-5 h-5" /> WhatsApp Enquiry
+                <a href="https://wa.me/919004810239" className="flex items-center justify-center gap-4 px-10 py-5 bg-white border-2 border-emerald-200 text-emerald-700 font-black uppercase tracking-widest text-sm rounded-full hover:bg-emerald-50 transition-all shadow-xl shadow-emerald-500/5">
+                  <MessageCircle className="w-6 h-6" /> WhatsApp Enquiry
                 </a>
               </motion.div>
             </div>
@@ -104,16 +116,17 @@ export default function PropertyPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative h-[400px] md:h-[550px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-emerald-50"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="order-1 lg:order-2 relative h-[400px] md:h-[650px] rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white"
             >
               <Image 
-                src="https://picsum.photos/seed/powai/800/1000"
-                alt="Aerial view of Powai landscape for JV development"
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000"
+                alt="Aerial view of massive land parcel for JV development in Mumbai"
                 fill
                 className="object-cover"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay" />
             </motion.div>
           </motion.div>
         </section>
@@ -126,6 +139,15 @@ export default function PropertyPage() {
               <p>
                 Delicacy Property presents an unprecedented Joint Venture (JV) opportunity for a sprawling 28-acre land parcel situated in the heart of Powai, Mumbai. Located in close proximity to the ultra-premium Hiranandani Gardens, this site represents one of the largest remaining contiguous land blocks in the eastern suburbs.
               </p>
+              <div className="my-12 relative h-96 w-full rounded-[3rem] overflow-hidden shadow-xl border border-emerald-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1200"
+                  alt="Strategic Land Development Concept"
+                  fill
+                  className="object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <p>
                 The property offers a perfect canvas for a landmark integrated township or a high-density luxury residential development. With the proposed 60:40 Joint Venture ratio, this deal is structured to align the interests of the landowner and the developer, fostering a partnership built on transparency and massive scale.
               </p>
@@ -198,8 +220,8 @@ export default function PropertyPage() {
               </div>
               <div className="relative h-[400px] md:h-[600px] rounded-[3rem] overflow-hidden border-4 border-emerald-800 shadow-2xl">
                 <Image 
-                  src="https://picsum.photos/seed/location/800/800"
-                  alt="Map visualization of Powai Mumbai connectivity"
+                  src="https://images.unsplash.com/photo-1449156001931-8288395ec367?auto=format&fit=crop&q=80&w=1000"
+                  alt="Modern Mumbai Cityscape and Connectivity Visual"
                   fill
                   className="object-cover opacity-80"
                   referrerPolicy="no-referrer"

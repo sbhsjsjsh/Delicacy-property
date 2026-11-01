@@ -97,23 +97,35 @@ export default function CommercialPropertyMumbaiPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="px-6 md:px-12 max-w-7xl mx-auto mb-20 text-center">
-          <motion.div {...STAGGER} className="max-w-4xl mx-auto">
+        <section className="relative px-6 pt-20 pb-32 md:pt-32 md:pb-48 md:px-12 overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <Image 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920"
+              alt="Mumbai Business District Modern Skyline"
+              fill
+              className="object-cover opacity-15 grayscale"
+              priority
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+          </div>
+          
+          <motion.div {...STAGGER} className="max-w-4xl mx-auto text-center">
             <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
               <Target className="w-3 h-3" /> Premier Business Spaces
             </motion.div>
-            <motion.h1 variants={FADE_UP} className="text-4xl md:text-6xl font-black text-emerald-950 mb-6 leading-[1.1] tracking-tight">
+            <motion.h1 variants={FADE_UP} className="text-4xl md:text-7xl font-black text-emerald-950 mb-8 leading-[1.1] tracking-tight">
               Commercial Property for <span className="text-emerald-500 italic">Sale in Mumbai</span>
             </motion.h1>
-            <motion.p variants={FADE_UP} className="text-lg md:text-xl text-emerald-800/70 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+            <motion.p variants={FADE_UP} className="text-lg md:text-2xl text-emerald-800/70 max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
               Delicacy Property assists serious buyers, business owners, and property investors in acquiring high-potential commercial real estate across Mumbai&apos;s prime business districts.
             </motion.p>
-            <motion.div variants={FADE_UP} className="flex flex-wrap justify-center gap-4">
-              <a href="tel:9004810239" className="flex items-center gap-3 px-8 py-4 bg-emerald-500 text-white rounded-2xl font-bold hover:bg-emerald-600 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-emerald-500/25">
-                <Phone className="w-5 h-5" /> Call 9004810239
+            <motion.div variants={FADE_UP} className="flex flex-wrap justify-center gap-6">
+              <a href="tel:9004810239" className="flex items-center gap-4 px-10 py-5 bg-emerald-500 text-white rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-emerald-600 transition-all hover:scale-[1.05] active:scale-[0.95] shadow-2xl shadow-emerald-500/30">
+                <Phone className="w-6 h-6" /> Call 9004810239
               </a>
-              <a href="https://wa.me/919004810239" className="flex items-center gap-3 px-8 py-4 bg-emerald-50 text-emerald-700 border border-emerald-100 rounded-2xl font-bold hover:bg-white transition-all hover:scale-[1.02] active:scale-[0.98]">
-                <MessageCircle className="w-5 h-5" /> WhatsApp Enquiries
+              <a href="https://wa.me/919004810239" className="flex items-center gap-4 px-10 py-5 bg-white text-emerald-700 border-2 border-emerald-100 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-emerald-50 transition-all hover:scale-[1.05] active:scale-[0.95] shadow-xl shadow-emerald-500/5">
+                <MessageCircle className="w-6 h-6" /> WhatsApp Enquiries
               </a>
             </motion.div>
           </motion.div>
@@ -217,13 +229,14 @@ export default function CommercialPropertyMumbaiPage() {
                 initial="initial"
                 whileInView="whileInView"
                 viewport={{ once: true }}
-                className="group p-8 rounded-3xl border border-emerald-100 hover:border-emerald-500 transition-all hover:bg-emerald-50/30"
+                className="group p-8 rounded-3xl border border-emerald-100 hover:border-emerald-500 transition-all hover:bg-emerald-50/30 overflow-hidden relative"
               >
-                <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="absolute top-0 right-0 w-24 h-24 -mr-12 -mt-12 bg-emerald-50 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform relative z-10">
                   <feature.icon className="w-7 h-7 text-emerald-600" />
                 </div>
-                <h3 className="text-xl font-bold text-emerald-950 mb-3">{feature.title}</h3>
-                <p className="text-emerald-800/60 text-sm leading-relaxed mb-6">
+                <h3 className="text-xl font-bold text-emerald-950 mb-3 relative z-10">{feature.title}</h3>
+                <p className="text-emerald-800/60 text-sm leading-relaxed mb-6 relative z-10">
                   {feature.desc}
                 </p>
               </motion.div>

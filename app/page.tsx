@@ -53,17 +53,28 @@ export default function LandingPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative px-6 pt-32 pb-20 md:pt-48 md:pb-40 md:px-12 max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
-          <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-emerald-100/40 rounded-full blur-[120px] -z-10 animate-pulse"></div>
-          
-          <motion.div {...STAGGER} className="max-w-5xl flex flex-col items-center">
-            <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-600 text-xs font-bold tracking-widest uppercase mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              Premium Real Estate Consulting Mumbai
-            </motion.div>
+        <section className="relative px-6 pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <Image 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920"
+              alt="Mumbai Skyline Premium Real Estate"
+              fill
+              className="object-cover opacity-15 grayscale"
+              priority
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+          </div>
+
+          <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
+            <motion.div {...STAGGER} className="max-w-5xl flex flex-col items-center">
+              <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-600 text-xs font-bold tracking-widest uppercase mb-8">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Premium Real Estate Consulting Mumbai
+              </motion.div>
             <motion.h1 
               variants={FADE_UP}
               className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] sm:leading-[1.05] text-emerald-950 break-words"
@@ -93,7 +104,8 @@ export default function LandingPage() {
               </a>
             </motion.div>
           </motion.div>
-        </section>
+        </div>
+      </section>
 
         {/* Stats Section */}
         <section className="px-6 py-12 md:px-12 max-w-7xl mx-auto">
@@ -131,7 +143,7 @@ export default function LandingPage() {
               <div className="bg-white rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
                 <div className="relative h-64 w-full">
                   <Image 
-                    src="https://picsum.photos/seed/powai/600/400" 
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800" 
                     alt="28 Acre JV Land Powai"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -162,7 +174,7 @@ export default function LandingPage() {
               <div className="bg-white rounded-[2.5rem] border border-emerald-100 overflow-hidden hover:shadow-2xl hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
                 <div className="relative h-64 w-full">
                   <Image 
-                    src="https://picsum.photos/seed/dadar-sale/600/400" 
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" 
                     alt="Outright Building Sale Dadar"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -264,10 +276,19 @@ export default function LandingPage() {
                   <Users2 className="w-10 h-10" />
                 </div>
                 <h4 className="text-3xl font-black mb-6 text-emerald-950 tracking-tight">SRA Projects</h4>
-                <p className="text-emerald-800/70 font-medium leading-relaxed mb-8">
+                <p className="text-emerald-800/70 font-medium leading-relaxed mb-8 relative z-10">
                   Expert guidance on Slum Rehabilitation Authority projects. We handle survey management, legal compliance, and stakeholder coordination.
                 </p>
-                <ul className="space-y-4 mb-10">
+                <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-8">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=600" 
+                    alt="SRA Development Visual"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <ul className="space-y-4 mb-2 relative z-10">
                   {['Legal Vetting', 'Tenant Coordination', 'Regulatory Clearances'].map((item) => (
                     <li key={item} className="flex items-center gap-4 text-base font-bold text-emerald-900">
                       <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
@@ -288,10 +309,19 @@ export default function LandingPage() {
                   <Building2 className="w-10 h-10" />
                 </div>
                 <h4 className="text-3xl font-black mb-6 text-emerald-950 tracking-tight">Redevelopment</h4>
-                <p className="text-emerald-800/70 font-medium leading-relaxed mb-8">
+                <p className="text-emerald-800/70 font-medium leading-relaxed mb-8 relative z-10">
                   Transforming aging structures into modern landmarks. We bridge the gap between housing societies and premium developers.
                 </p>
-                <ul className="space-y-4 mb-10">
+                <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-8">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=600" 
+                    alt="Building Redevelopment Visual"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <ul className="space-y-4 mb-2 relative z-10">
                   {['Society Liasoning', 'PMC Services', 'Developer Selection'].map((item) => (
                     <li key={item} className="flex items-center gap-4 text-base font-bold text-emerald-900">
                       <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
@@ -312,10 +342,19 @@ export default function LandingPage() {
                   <Map className="w-10 h-10" />
                 </div>
                 <h4 className="text-3xl font-black mb-6 text-emerald-950 tracking-tight">Strategic Assets</h4>
-                <p className="text-emerald-800/70 font-medium leading-relaxed mb-8">
+                <p className="text-emerald-800/70 font-medium leading-relaxed mb-8 relative z-10">
                   Identifying prime open land and commercial inventory for investors. Our data-driven approach identifies high-growth zones.
                 </p>
-                <ul className="space-y-4 mb-10">
+                <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-8">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=600" 
+                    alt="Strategic Land Visual"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <ul className="space-y-4 mb-2 relative z-10">
                   {['Land Surveying', 'Commercial Leasing', 'Yield Analysis'].map((item) => (
                     <li key={item} className="flex items-center gap-4 text-base font-bold text-emerald-900">
                       <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
@@ -363,8 +402,8 @@ export default function LandingPage() {
             
             <div className="lg:w-1/2 relative h-[600px] md:h-[700px] w-full rounded-[4rem] overflow-hidden shadow-2xl shadow-emerald-500/10 border-8 border-white">
               <Image 
-                src="https://picsum.photos/seed/mumbai/800/1000"
-                alt="Mumbai Architecture"
+                src="https://images.unsplash.com/photo-1562618456-4252329b3576?auto=format&fit=crop&q=80&w=800"
+                alt="Mumbai Architecture and Modern Living"
                 fill
                 className="object-cover"
                 referrerPolicy="no-referrer"

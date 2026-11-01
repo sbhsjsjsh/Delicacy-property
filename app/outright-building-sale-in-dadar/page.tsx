@@ -95,22 +95,34 @@ export default function OutrightBuildingDadarPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="px-6 md:px-12 max-w-7xl mx-auto mb-20 text-center">
+        <section className="relative px-6 pt-20 pb-32 md:pt-32 md:pb-48 md:px-12 overflow-hidden text-center">
+          <div className="absolute inset-0 -z-10">
+            <Image 
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1920"
+              alt="Mumbai Urban Skyline representing premium real estate opportunities"
+              fill
+              className="object-cover opacity-15 grayscale"
+              priority
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+          </div>
+
           <motion.div {...STAGGER} className="max-w-4xl mx-auto">
             <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
               Commercial & Residential Inventory
             </motion.div>
-            <motion.h1 variants={FADE_UP} className="text-4xl md:text-6xl lg:text-7xl font-black text-emerald-950 leading-tight mb-8">
+            <motion.h1 variants={FADE_UP} className="text-4xl md:text-7xl lg:text-8xl font-black text-emerald-950 leading-tight mb-8">
               Outright Building Sale in <span className="text-emerald-500">Dadar, Mumbai.</span>
             </motion.h1>
-            <motion.p variants={FADE_UP} className="text-lg md:text-xl text-emerald-800/80 font-medium leading-relaxed mb-10 max-w-3xl mx-auto">
+            <motion.p variants={FADE_UP} className="text-lg md:text-2xl text-emerald-800/80 font-medium leading-relaxed mb-12 max-w-3xl mx-auto">
               Delicacy Property assists serious buyers, property investors, and businesses enquiring about outright building purchase opportunities in the heart of Dadar. We simplify high-value transactions with verified inventory and expert legal guidance.
             </motion.p>
             <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a href="#enquiry-form" className="px-12 py-5 bg-emerald-500 text-white font-black rounded-full shadow-2xl shadow-emerald-500/30 hover:bg-emerald-600 hover:-translate-y-1 transition-all text-lg">
+              <a href="#enquiry-form" className="px-12 py-6 bg-emerald-500 text-white font-black uppercase tracking-widest rounded-full shadow-2xl shadow-emerald-500/30 hover:bg-emerald-600 hover:-translate-y-1.5 transition-all text-sm">
                 Submit Purchase Enquiry
               </a>
-              <a href="tel:9004810239" className="px-12 py-5 bg-white border-2 border-emerald-200 text-emerald-700 font-black rounded-full hover:bg-emerald-50 transition-all flex items-center justify-center gap-3 text-lg">
+              <a href="tel:9004810239" className="px-12 py-6 bg-white border-2 border-emerald-200 text-emerald-700 font-black uppercase tracking-widest rounded-full hover:bg-emerald-50 transition-all flex items-center justify-center gap-4 text-sm">
                 <Phone className="w-6 h-6" /> 9004810239
               </a>
             </motion.div>
@@ -132,14 +144,15 @@ export default function OutrightBuildingDadarPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[500px] rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white">
+              <div className="relative h-[500px] rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white group">
                 <Image 
-                  src="https://picsum.photos/seed/dadar-building/800/1000"
-                  alt="Modern commercial building in Dadar Mumbai representing outright sale opportunities"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000"
+                  alt="Modern commercial building architecture in Dadar Mumbai"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
+                <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay group-hover:bg-transparent transition-colors" />
               </div>
             </div>
           </div>
@@ -196,14 +209,15 @@ export default function OutrightBuildingDadarPage() {
         {/* Why Dadar Section */}
         <section className="px-6 py-32 bg-emerald-50 rounded-[4rem] mx-6 md:mx-12 mb-32 relative overflow-hidden">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-             <div className="relative h-[600px] rounded-[3rem] overflow-hidden shadow-xl">
+             <div className="relative h-[600px] rounded-[3rem] overflow-hidden shadow-xl group">
                 <Image 
-                  src="https://picsum.photos/seed/dadar-market/800/1000"
-                  alt="Dadar Railway Station area representing central connectivity"
+                  src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=1000"
+                  alt="Aerial view of a premium standalone building in Mumbai"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
+                <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay group-hover:bg-transparent transition-colors" />
              </div>
              <div>
                 <h2 className="text-sm font-black tracking-[0.4em] uppercase text-emerald-600 mb-10">Strategic Location</h2>

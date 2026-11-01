@@ -97,27 +97,39 @@ export default function DahisarDevelopersClient() {
         </div>
 
         {/* Hero Section */}
-        <section className="px-6 md:px-12 max-w-7xl mx-auto mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <section className="relative px-6 pt-20 pb-32 md:pt-32 md:pb-48 md:px-12 overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <Image 
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1920"
+              alt="Aerial view of Dahisar Mumbai development land with skyscrapers"
+              fill
+              className="object-cover opacity-15 grayscale"
+              priority
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600 text-[10px] font-black uppercase tracking-widest mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
                 <LayoutGrid className="w-3 h-3" /> For Builders & Developers
               </div>
-              <h1 className="text-4xl md:text-6xl font-black text-emerald-950 leading-[1.1] mb-6">
+              <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-emerald-950 leading-[1.05] mb-8 tracking-tight">
                 Large Land Acquisition for <span className="text-emerald-500">Developers in Dahisar</span>
               </h1>
-              <p className="text-lg text-emerald-800/70 font-medium leading-relaxed mb-8 max-w-xl">
+              <p className="text-lg md:text-2xl text-emerald-800/70 font-medium leading-relaxed mb-12 max-w-xl">
                 Verified, clear-title land parcels for large-scale residential and commercial projects. Secure your next landmark development with Delicacy Property.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <a href="tel:9004810239" className="px-8 py-4 bg-emerald-500 text-white font-bold rounded-full hover:bg-emerald-600 transition-all shadow-lg shadow-emerald-500/20 flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <a href="tel:9004810239" className="px-10 py-5 bg-emerald-500 text-white font-black uppercase tracking-widest text-sm rounded-full shadow-2xl shadow-emerald-500/30 hover:bg-emerald-600 hover:-translate-y-1.5 transition-all flex items-center justify-center gap-3">
                   <Phone className="w-5 h-5" /> Call: +91-9004810239
                 </a>
-                <a href="https://wa.me/919004810239" className="px-8 py-4 bg-white border-2 border-emerald-100 text-emerald-600 font-bold rounded-full hover:bg-emerald-50 transition-all flex items-center gap-2">
+                <a href="https://wa.me/919004810239" className="px-10 py-5 bg-white border-2 border-emerald-200 text-emerald-600 font-black uppercase tracking-widest text-sm rounded-full hover:bg-emerald-50 transition-all flex items-center justify-center gap-3 shadow-xl shadow-emerald-500/5">
                   <MessageCircle className="w-5 h-5" /> Schedule Site Visit
                 </a>
               </div>
@@ -125,16 +137,17 @@ export default function DahisarDevelopersClient() {
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="relative aspect-video lg:aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white"
             >
               <Image 
-                src="https://picsum.photos/seed/developer-land/1200/1200"
-                alt="Large Land Acquisition for Developers in Dahisar"
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200"
+                alt="Large Land Acquisition for Real Estate Developers in Dahisar"
                 fill
                 className="object-cover"
                 referrerPolicy="no-referrer"
               />
+              <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay" />
             </motion.div>
           </div>
         </section>
@@ -206,8 +219,8 @@ export default function DahisarDevelopersClient() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1 relative aspect-square rounded-[3rem] overflow-hidden">
               <Image 
-                src="https://picsum.photos/seed/developer-services/800/800"
-                alt="Services for Real Estate Developers"
+                src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800"
+                alt="Professional Real Estate Developer Services"
                 fill
                 className="object-cover"
                 referrerPolicy="no-referrer"
