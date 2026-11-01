@@ -11,7 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/commercial-property-for-sale-in-mumbai',
     '/new-properties-mumbai',
     '/large-land-investment-property-in-mumbai-dahisar',
-    '/large-land-acquisition-for-developers-in-dahisar'
+    '/large-land-acquisition-for-developers-in-dahisar',
+    '/large-land-acquisition-for-developers-in-dahisar-west'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
