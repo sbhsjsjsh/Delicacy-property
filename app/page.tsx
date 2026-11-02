@@ -243,6 +243,49 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* Dahisar Land Section */}
+        <section className="px-6 py-20 md:px-12 max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-black tracking-[0.3em] uppercase text-emerald-600 mb-4">Growth Corridors</h2>
+            <h3 className="text-3xl md:text-5xl font-bold text-emerald-950">Dahisar Land Opportunities</h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { 
+                title: "Land Investment", 
+                href: "/large-land-investment-property-in-mumbai-dahisar",
+                desc: "High-appreciation potential land parcels for long-term wealth building."
+              },
+              { 
+                title: "Developer Land", 
+                href: "/large-land-acquisition-for-developers-in-dahisar",
+                desc: "Bulk land acquisition with clear titles for residential & commercial projects."
+              },
+              { 
+                title: "Dahisar West Deals", 
+                href: "/large-land-acquisition-for-developers-in-dahisar-west",
+                desc: "Strategic development land in Mumbai's last Western growth frontier."
+              },
+              { 
+                title: "Dahisar East Plots", 
+                href: "/large-plot-for-sale-in-dahisar-east",
+                desc: "Verified plots for developers & investors in prime Dahisar East locations."
+              }
+            ].map((item, i) => (
+              <Link key={i} href={item.href} className="group p-8 rounded-[2rem] bg-white border border-emerald-100 hover:shadow-xl hover:shadow-emerald-500/5 transition-all">
+                <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <TrendingUp className="w-6 h-6" />
+                </div>
+                <h4 className="text-xl font-bold text-emerald-950 mb-3 group-hover:text-emerald-600 transition-colors">{item.title}</h4>
+                <p className="text-emerald-800/60 text-sm font-medium leading-relaxed mb-6">{item.desc}</p>
+                <span className="text-emerald-600 font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                  View Details <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Specialized Services */}
         <section id="expertise" className="px-6 py-24 md:py-40 md:px-12 bg-emerald-50/50 border-t border-emerald-100 rounded-t-[3rem] md:rounded-t-[6rem]">
           <div className="max-w-7xl mx-auto">

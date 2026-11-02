@@ -12,7 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/new-properties-mumbai',
     '/large-land-investment-property-in-mumbai-dahisar',
     '/large-land-acquisition-for-developers-in-dahisar',
-    '/large-land-acquisition-for-developers-in-dahisar-west'
+    '/large-land-acquisition-for-developers-in-dahisar-west',
+    '/large-plot-for-sale-in-dahisar-east'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],

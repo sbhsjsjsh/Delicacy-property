@@ -160,7 +160,7 @@ export default function DahisarDevelopersClient() {
               Large, development-ready land is getting scarce in Mumbai, and Dahisar is one of the few Western suburb locations where big parcels are still available. For builders and developers, <strong className="text-emerald-600">large land acquisition in Dahisar</strong> is a chance to launch high-value residential and commercial projects in a market with strong demand and rising infrastructure.
             </p>
             <p className="mt-6 text-emerald-800/60 leading-relaxed">
-              At <strong>Delicacy Property</strong>, we help developers acquire legally verified large land parcels in Dahisar with transparent pricing, proper due diligence and complete support from site visit to registration.
+              At <strong>Delicacy Property</strong>, we help developers acquire legally verified large land parcels in Dahisar with transparent pricing, proper due diligence and complete support from site visit to registration. Explore specific opportunities like <Link href="/large-land-acquisition-for-developers-in-dahisar-west" className="text-emerald-600 hover:underline">development land in Dahisar West</Link> or browse our <Link href="/large-plot-for-sale-in-dahisar-east" className="text-emerald-600 hover:underline">large plots for sale in Dahisar East</Link>.
             </p>
           </motion.div>
         </section>

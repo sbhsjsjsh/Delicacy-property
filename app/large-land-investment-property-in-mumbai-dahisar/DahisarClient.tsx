@@ -157,7 +157,7 @@ export default function DahisarClient() {
             Dahisar is one of the last growth frontiers of Mumbai&apos;s Western suburbs. With metro connectivity, the Coastal Road extension, the Western Express Highway and strong demand from homebuyers, a <strong className="text-emerald-600">large land investment property in Mumbai Dahisar</strong> is a smart way to build long-term wealth.
           </motion.p>
           <motion.p variants={FADE_UP} initial="initial" whileInView="whileInView" className="mt-6 text-emerald-800/60 leading-relaxed">
-            At <strong>Delicacy Property</strong>, we help investors, developers and business groups buy legally verified land in Dahisar with transparent pricing and complete support from site visit to registration.
+            At <strong>Delicacy Property</strong>, we help investors, developers and business groups buy legally verified land in Dahisar with transparent pricing and complete support from site visit to registration. We also provide specialized services for <Link href="/large-land-acquisition-for-developers-in-dahisar" className="text-emerald-600 hover:underline">developers looking for large land in Dahisar</Link>, including <Link href="/large-land-acquisition-for-developers-in-dahisar-west" className="text-emerald-600 hover:underline">Dahisar West acquisitions</Link> and <Link href="/large-plot-for-sale-in-dahisar-east" className="text-emerald-600 hover:underline">plots in Dahisar East</Link>.
           </motion.p>
         </section>
 
