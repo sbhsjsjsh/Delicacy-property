@@ -249,12 +249,17 @@ export default function LandingPage() {
             <h2 className="text-sm font-black tracking-[0.3em] uppercase text-emerald-600 mb-4">Growth Corridors</h2>
             <h3 className="text-3xl md:text-5xl font-bold text-emerald-950">Dahisar Land Opportunities</h3>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
               { 
                 title: "Land Investment", 
                 href: "/large-land-investment-property-in-mumbai-dahisar",
                 desc: "High-appreciation potential land parcels for long-term wealth building."
+              },
+              { 
+                title: "Dahisar Land Plots", 
+                href: "/dahisar-land-plots-for-sale",
+                desc: "Verified plots for residential, commercial and investment use in Dahisar."
               },
               { 
                 title: "Developer Land", 
