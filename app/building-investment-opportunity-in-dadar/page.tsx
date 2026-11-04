@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Building Investment Opportunity in Dadar, Mumbai | Delicacy Property',
   description: 'Looking for a building investment opportunity in Dadar? Delicacy Property offers verified, clear-title buildings and development assets in central Mumbai. Call +91-9004810239 for a free site visit.',
   keywords: 'Building Investment Opportunity in Dadar, building for sale in Dadar, commercial building Dadar Mumbai, residential building investment Dadar, redevelopment building Dadar, Dadar real estate investment, buy building in Dadar',
+  alternates: {
+    canonical: 'https://delicacy-property.vercel.app/building-investment-opportunity-in-dadar',
+  },
   openGraph: {
     title: 'Building Investment Opportunity in Dadar, Mumbai | Delicacy Property',
     description: 'Verified buildings for rental income and redevelopment in central Mumbai. Secure a high-value asset in Dadar with Delicacy Property.',

@@ -1,27 +1,71 @@
 import { MetadataRoute } from 'next';
+import fs from 'fs';
+import path from 'path';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://delicacyproperty.com'; // Replace with actual domain if known, otherwise use a placeholder
+/**
+ * Automatically discovery all indexable routes in the Next.js App Router directory.
+ * It scans the filesystem for folders containing a 'page.tsx' file.
+ */
+function getRoutes(dir: string, baseRoute = ''): string[] {
+  const routes: string[] = [];
+  const files = fs.readdirSync(dir, { withFileTypes: true });
 
-  const routes = [
-    '',
-    '/28-acre-jv-land-hiranandani-powai-mumbai',
-    '/land-for-joint-venture-in-mumbai',
-    '/outright-building-sale-in-dadar',
-    '/commercial-property-for-sale-in-mumbai',
-    '/new-properties-mumbai',
-    '/large-land-investment-property-in-mumbai-dahisar',
-    '/large-land-acquisition-for-developers-in-dahisar',
-    '/large-land-acquisition-for-developers-in-dahisar-west',
-    '/large-plot-for-sale-in-dahisar-east',
-    '/dahisar-land-plots-for-sale',
-    '/building-investment-opportunity-in-dadar'
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString().split('T')[0],
-    changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1 : 0.8,
-  }));
+  // Check if current directory has a page.tsx (it's a route)
+  const hasPage = files.some(file => file.isFile() && (file.name === 'page.tsx' || file.name === 'page.js'));
+  
+  if (hasPage && baseRoute !== '/api') {
+    routes.push(baseRoute === '' ? '' : baseRoute);
+  }
+
+  for (const file of files) {
+    if (file.isDirectory()) {
+      const folderName = file.name;
+      
+      // Exclude special Next.js folders and API routes
+      if (
+        folderName.startsWith('_') || 
+        folderName.startsWith('.') || 
+        folderName === 'api' ||
+        folderName === 'node_modules'
+      ) {
+        continue;
+      }
+
+      // Handle Route Groups (e.g., (marketing)) - they don't add to the URL path
+      const isRouteGroup = folderName.startsWith('(') && folderName.endsWith(')');
+      const nextBaseRoute = isRouteGroup ? baseRoute : `${baseRoute}/${folderName}`;
+      
+      routes.push(...getRoutes(path.join(dir, folderName), nextBaseRoute));
+    }
+  }
 
   return routes;
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://delicacy-property.vercel.app';
+  
+  // The 'app' directory is located at /app/app in this environment
+  // or just /app if we are running from root.
+  // Based on previous tool calls, the routes are in /app.
+  const appDirectory = path.join(process.cwd(), 'app');
+  
+  let dynamicRoutes: string[] = [];
+  try {
+    dynamicRoutes = getRoutes(appDirectory);
+  } catch (error) {
+    console.error('Sitemap generation error:', error);
+    // Fallback to static list if filesystem read fails
+    dynamicRoutes = ['', '/28-acre-jv-land-hiranandani-powai-mumbai', '/land-for-joint-venture-in-mumbai'];
+  }
+
+  // Remove duplicates and ensure root is present
+  const uniqueRoutes = Array.from(new Set(dynamicRoutes));
+
+  return uniqueRoutes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date().toISOString().split('T')[0],
+    changeFrequency: 'weekly',
+    priority: route === '' ? 1.0 : 0.8,
+  }));
 }

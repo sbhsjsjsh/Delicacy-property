@@ -6,8 +6,12 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-jakarta' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://delicacy-property.vercel.app'),
   title: 'Delicacy Property Mumbai | SRA & Building Redevelopment Consultant',
   description: 'Delicacy Property is a trusted real estate consultant in Mumbai specializing in SRA deals, building redevelopment, property consultancy, and real estate solutions.',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Delicacy Property Mumbai | SRA & Building Redevelopment Consultant',
     description: 'Delicacy Property is a trusted real estate consultant in Mumbai specializing in SRA deals, building redevelopment, property consultancy, and real estate solutions.',
