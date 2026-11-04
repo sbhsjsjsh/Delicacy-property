@@ -592,6 +592,7 @@ export default function LandingPage() {
             <ul className="space-y-5">
               <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">JV Land Hub</Link></li>
               <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Building Sale Dadar</Link></li>
+              <li><Link href="/building-investment-opportunity-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Dadar Investment</Link></li>
               <li><Link href="/commercial-property-for-sale-in-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Commercial Property</Link></li>
               {['SRA Consulting', 'Redevelopment', 'Open Land Deals'].map((s) => (
                 <li key={s} className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors cursor-pointer flex items-center gap-2 group">

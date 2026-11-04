@@ -14,7 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/large-land-acquisition-for-developers-in-dahisar',
     '/large-land-acquisition-for-developers-in-dahisar-west',
     '/large-plot-for-sale-in-dahisar-east',
-    '/dahisar-land-plots-for-sale'
+    '/dahisar-land-plots-for-sale',
+    '/building-investment-opportunity-in-dadar'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
