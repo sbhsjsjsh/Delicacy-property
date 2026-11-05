@@ -443,6 +443,7 @@ export default function DadarInvestmentClient() {
             <Link href="/" className="hover:text-emerald-600 transition-colors">Home</Link>
             <Link href="/outright-building-sale-in-dadar" className="hover:text-emerald-600 transition-colors">Dadar Sale</Link>
             <Link href="/building-for-corporate-investment-in-dadar" className="hover:text-emerald-600 transition-colors">Corporate Investment</Link>
+            <Link href="/outright-property-sale-near-kabutar-khana-dadar-west" className="hover:text-emerald-600 transition-colors">Kabutar Khana Property</Link>
             <a href="tel:9004810239" className="hover:text-emerald-600 transition-colors">Contact</a>
           </div>
         </div>

@@ -594,6 +594,7 @@ export default function HomeClient() {
               <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Building Sale Dadar</Link></li>
               <li><Link href="/building-investment-opportunity-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Dadar Investment</Link></li>
               <li><Link href="/building-for-corporate-investment-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Corporate Investment Dadar</Link></li>
+              <li><Link href="/outright-property-sale-near-kabutar-khana-dadar-west" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Kabutar Khana Property</Link></li>
               <li><Link href="/commercial-property-for-sale-in-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Commercial Property</Link></li>
               <li><Link href="/new-properties-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">New Property Launches</Link></li>
               {['SRA Consulting', 'Redevelopment', 'Open Land Deals'].map((s) => (

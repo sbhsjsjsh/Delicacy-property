@@ -338,20 +338,44 @@ export default function CorporateInvestmentDadarClient() {
       </main>
 
       <footer className="px-6 py-20 bg-emerald-50 border-t border-emerald-100">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-3">
-            <div className="relative w-10 h-10 overflow-hidden rounded-full border border-emerald-200">
-              <Image 
-                src="https://i.ibb.co/PG1tCFXY/file-00000000551c81fd87e21cbaa623a2a2.png"
-                alt="Delicacy Property Logo"
-                fill
-                className="object-cover"
-                referrerPolicy="no-referrer"
-              />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="relative w-10 h-10 overflow-hidden rounded-full border border-emerald-200">
+                <Image 
+                  src="https://i.ibb.co/PG1tCFXY/file-00000000551c81fd87e21cbaa623a2a2.png"
+                  alt="Delicacy Property Logo"
+                  fill
+                  className="object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <span className="text-2xl font-bold text-emerald-950 tracking-tighter">Delicacy<span className="text-emerald-500 font-light">Property</span></span>
             </div>
-            <span className="text-2xl font-bold text-emerald-950 tracking-tighter">Delicacy<span className="text-emerald-500 font-light">Property</span></span>
+            <p className="text-emerald-800/50 font-medium text-lg max-w-sm leading-relaxed">
+              Mumbai&apos;s commercial real estate specialists focusing on high-value assets, corporate investments, and strategic acquisitions in Dadar.
+            </p>
           </div>
-          <p className="text-emerald-800/50 font-bold uppercase tracking-widest text-xs">
+          <div>
+            <h6 className="text-emerald-950 font-black text-sm mb-6 uppercase tracking-widest">Directory</h6>
+            <ul className="space-y-4">
+              <li><Link href="/" className="text-emerald-800/50 hover:text-emerald-600 text-sm font-bold transition-colors">Home</Link></li>
+              <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/50 hover:text-emerald-600 text-sm font-bold transition-colors">Dadar Building Sale</Link></li>
+              <li><Link href="/outright-property-sale-near-kabutar-khana-dadar-west" className="text-emerald-800/50 hover:text-emerald-600 text-sm font-bold transition-colors">Kabutar Khana Property</Link></li>
+              <li><Link href="/building-investment-opportunity-in-dadar" className="text-emerald-800/50 hover:text-emerald-600 text-sm font-bold transition-colors">Investment Opportunity</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="text-emerald-950 font-black text-sm mb-6 uppercase tracking-widest">Expertise</h6>
+            <ul className="space-y-4 text-emerald-800/50 text-sm font-bold">
+              <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-emerald-600" /> 9004810239</li>
+              <li className="flex items-center gap-3"><MessageCircle className="w-4 h-4 text-emerald-600" /> WhatsApp</li>
+              <li className="flex items-center gap-3"><MapPin className="w-4 h-4 text-emerald-600" /> Dadar, Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-emerald-100/50">
+          <p className="text-emerald-800/50 font-bold uppercase tracking-widest text-[10px]">
             &copy; {new Date().getFullYear()} Delicacy Property. Mumbai&apos;s Commercial Specialists.
           </p>
         </div>
