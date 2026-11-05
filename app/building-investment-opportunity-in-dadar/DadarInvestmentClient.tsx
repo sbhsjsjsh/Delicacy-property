@@ -442,6 +442,7 @@ export default function DadarInvestmentClient() {
           <div className="flex items-center gap-8 text-emerald-800/50 font-bold text-sm uppercase tracking-tighter">
             <Link href="/" className="hover:text-emerald-600 transition-colors">Home</Link>
             <Link href="/outright-building-sale-in-dadar" className="hover:text-emerald-600 transition-colors">Dadar Sale</Link>
+            <Link href="/building-for-corporate-investment-in-dadar" className="hover:text-emerald-600 transition-colors">Corporate Investment</Link>
             <a href="tel:9004810239" className="hover:text-emerald-600 transition-colors">Contact</a>
           </div>
         </div>
