@@ -592,6 +592,7 @@ export default function HomeClient() {
             <ul className="space-y-5">
               <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">JV Land Hub</Link></li>
               <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Building Sale Dadar</Link></li>
+              <li><Link href="/full-building-purchase-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Full Building Purchase</Link></li>
               <li><Link href="/building-investment-opportunity-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Dadar Investment</Link></li>
               <li><Link href="/building-for-corporate-investment-in-dadar" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Corporate Investment Dadar</Link></li>
               <li><Link href="/outright-property-sale-near-kabutar-khana-dadar-west" className="text-emerald-800/40 hover:text-emerald-600 text-base font-bold transition-colors">Kabutar Khana Property</Link></li>

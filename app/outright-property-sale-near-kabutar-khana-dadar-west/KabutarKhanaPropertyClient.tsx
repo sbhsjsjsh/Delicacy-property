@@ -362,23 +362,59 @@ export default function KabutarKhanaPropertyClient() {
         </section>
       </main>
 
-      <footer className="px-6 py-20 bg-emerald-50 border-t border-emerald-100">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-3">
-            <div className="relative w-10 h-10 overflow-hidden rounded-full border border-emerald-200">
-              <Image 
-                src="https://i.ibb.co/PG1tCFXY/file-00000000551c81fd87e21cbaa623a2a2.png"
-                alt="Delicacy Property Logo"
-                fill
-                className="object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <span className="text-2xl font-bold text-emerald-950 tracking-tighter">Delicacy<span className="text-emerald-500 font-light">Property</span></span>
+      <footer className="px-6 py-32 md:px-12 max-w-7xl mx-auto border-t border-emerald-100 bg-emerald-50/20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-24">
+          <div className="col-span-1 md:col-span-2">
+            <Link href="/" className="flex items-center gap-5 group mb-12">
+              <div className="relative w-16 h-16 overflow-hidden rounded-full border-2 border-emerald-500/20 bg-white p-1 shadow-sm group-hover:scale-105 transition-transform">
+                <Image 
+                  src="https://i.ibb.co/PG1tCFXY/file-00000000551c81fd87e21cbaa623a2a2.png"
+                  alt="Delicacy Property Logo"
+                  fill
+                  className="object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="text-4xl font-black tracking-tighter text-emerald-950">
+                Delicacy<span className="text-emerald-500 font-light">Property</span>
+              </div>
+            </Link>
+            <p className="text-emerald-800/50 font-medium text-xl max-w-md leading-relaxed mb-12">
+              Expert real estate consultancy for outright property sales near Kabutar Khana, building investments, and strategic transactions across Mumbai.
+            </p>
           </div>
-          <p className="text-emerald-800/50 font-bold uppercase tracking-widest text-xs">
-            &copy; {new Date().getFullYear()} Delicacy Property. Dadar West Property Specialists.
+          
+          <div>
+            <h6 className="text-emerald-950 font-black text-sm mb-10 uppercase tracking-[0.3em]">Directory</h6>
+            <ul className="space-y-6">
+              <li><Link href="/" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Home</Link></li>
+              <li><Link href="/outright-building-sale-in-dadar" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Outright Sale Dadar</Link></li>
+              <li><Link href="/full-building-purchase-in-dadar" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Full Building Purchase</Link></li>
+              <li><Link href="/outright-property-sale-near-kabutar-khana-dadar-west" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Kabutar Khana Property</Link></li>
+              <li><Link href="/building-for-corporate-investment-in-dadar" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Corporate Investment Dadar</Link></li>
+              <li><Link href="/land-for-joint-venture-in-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">JV Land Hub</Link></li>
+              <li><Link href="/commercial-property-for-sale-in-mumbai" className="text-emerald-800/50 hover:text-emerald-600 text-lg font-bold transition-colors">Commercial Property</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h6 className="text-emerald-950 font-black text-sm mb-10 uppercase tracking-[0.3em]">Expertise</h6>
+            <ul className="space-y-6">
+              <li className="text-emerald-800/50 font-bold text-lg flex items-center gap-4"><Phone className="w-5 h-5 text-emerald-600" /> 9004810239</li>
+              <li className="text-emerald-800/50 font-bold text-lg flex items-center gap-4"><MessageCircle className="w-5 h-5 text-emerald-600" /> WhatsApp</li>
+              <li className="text-emerald-800/50 font-bold text-lg flex items-center gap-4"><MapPin className="w-5 h-5 text-emerald-600" /> Mumbai, India</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-10 pt-16 border-t border-emerald-100 mt-20">
+          <p className="text-[10px] text-emerald-500 font-black tracking-[0.4em] uppercase">
+            &copy; {new Date().getFullYear()} Delicacy Property. High-Value Assets.
           </p>
+          <div className="flex gap-12 text-[10px] text-emerald-400 font-black uppercase tracking-[0.4em]">
+            <span className="cursor-pointer hover:text-emerald-600 transition-colors">Privacy</span>
+            <span className="cursor-pointer hover:text-emerald-600 transition-colors">Legal</span>
+          </div>
         </div>
       </footer>
     </div>
